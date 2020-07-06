@@ -25,6 +25,6 @@ jobs:
       with: 
         node-version: 12
     - name: Install Surge
-      run: npn install -g surge
+      run: npm install -g surge
     - name: Run Surge
       run: surge ./ hassannt.surge.sh --token ${{secrets.SURGE_TOKEN}}                      #./ means current folder
